@@ -1,0 +1,14 @@
+# receives a number height and a character char and builds an ASCII Pyramid with them
+
+def nested_pyramid(height, char):
+    pyramid = ''
+
+    for level in range(1, height + 1):
+        line = ''
+        for c in range(level):
+            line += char
+
+        line += '\n'
+        pyramid += line
+
+    return pyramid 

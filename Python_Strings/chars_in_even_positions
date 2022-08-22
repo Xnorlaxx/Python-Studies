@@ -1,0 +1,11 @@
+def chars_in_even_positions(a_string):
+    """
+        word = ""
+        position = 1
+        for c in a_string:
+            if position % 2 == 0:
+                word += c
+            position += 1
+        return word
+    """
+    return a_string[1::2]

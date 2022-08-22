@@ -1,0 +1,11 @@
+def insert_dashes(a_string):
+    count = 1
+    word = ""
+    for char in a_string:
+        word += char
+        if count == 3:
+            word += '-'
+            count = 1
+        else:
+            count += 1
+    return word

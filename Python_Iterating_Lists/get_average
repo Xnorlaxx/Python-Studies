@@ -1,0 +1,5 @@
+def get_average(list_of_numbers):
+    total = 0
+    for number in list_of_numbers:
+        total += number
+    return total / len(list_of_numbers)

@@ -1,0 +1,8 @@
+def censor_dictionary(unclean_dictionary, flagged_word):
+    removal = []
+    for key, value in unclean_dictionary.items():
+        if flagged_word in value:
+            removal.append(key)
+    for word in removal:
+        unclean_dictionary.pop(word, None)
+    return unclean_dictionary

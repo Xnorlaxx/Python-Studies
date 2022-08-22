@@ -1,0 +1,6 @@
+def max_char(a_string):
+    found = None
+    for char in a_string:
+        if found is None or char > found:
+            found = char
+    return found or ''

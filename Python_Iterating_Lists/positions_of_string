@@ -1,0 +1,5 @@
+def get_string_positions(the_string):
+    result = ""
+    for position, char in enumerate(the_string):
+        result += str(position) + '-' + char + '\n'
+    return result    

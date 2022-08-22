@@ -1,0 +1,11 @@
+# takes three inputs: height (rows), width (columns), and a character char and 
+# creates a height × width box using the character char.
+
+def create_box(height, width, char):
+    result = ''
+    for h in range(height):
+        line = ''
+        for w in range(width):
+            line += char
+        result += (line + '\n')
+    return result
