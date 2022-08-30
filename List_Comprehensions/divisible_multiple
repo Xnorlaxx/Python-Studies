@@ -1,0 +1,5 @@
+# a function that receives a list of numbers and a list of terms 
+# and returns only the elements that are divisible by ALL the terms
+
+def divisible_numbers(a_list, a_list_of_terms):
+    return [n for n in a_list if all([n % term == 0 for term in a_list_of_terms])]

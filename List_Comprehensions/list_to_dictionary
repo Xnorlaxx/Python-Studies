@@ -1,0 +1,5 @@
+# a function that receives a list and returns a dictionary 
+# with the elements initialized with the value 0
+
+def init_dict(a_list):
+    return {k: 0 for k in a_list}

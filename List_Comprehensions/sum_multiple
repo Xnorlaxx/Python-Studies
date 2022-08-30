@@ -1,0 +1,6 @@
+# a function that receives multiple arguments and returns the sum of them
+
+def sum_multiple(*args):
+    if not args:
+        raise AttributeError("You must pass at least one number to sum")
+    return sum(args)

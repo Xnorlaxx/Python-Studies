@@ -1,0 +1,4 @@
+# a function that receives a list of numbers and returns only the even elements
+
+def even_numbers(a_list):
+    return [n for n in a_list if n % 2 == 0]

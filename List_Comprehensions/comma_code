@@ -1,0 +1,11 @@
+# a function that takes a list value as an argument and 
+# returns a string with all the items separated by a comma and a space, 
+# with 'and' inserted before the last item
+
+try:
+    reduce
+except NameError:
+    from functools import reduce
+
+def comma_code(a_list):
+    return reduce(lambda x, y: x + ", " + y if y != a_list[len(a_list)-1] else x + " and " + y, a_list)

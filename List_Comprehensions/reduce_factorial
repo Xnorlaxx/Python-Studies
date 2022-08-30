@@ -1,0 +1,17 @@
+try:
+    reduce
+except NameError:
+    from functools import reduce
+
+def factorial_terms(a_number):      # will receive a number and return the list of terms to compute the factorial
+    if a_number < 0:
+        raise ValueError("Only defined for positive numbers")
+    return list(range(a_number or 1, 0, -1))
+
+def compute_factorial(terms):       # will receive a list of terms and compute the factorial
+    if not terms:
+        raise ValueError("Terms should have at least one element")
+    return reduce(lambda a, b: a*b, terms, 1)
+
+def factorial(number):              # will get a number and, using both helper functions, will compute the answer
+    return compute_factorial(factorial_terms(number))
